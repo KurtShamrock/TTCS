@@ -1,0 +1,110 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  font-family: sans-serif;
+}
+
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+ margin-left: 70px;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  width: 100%;
+  border-bottom: 3px solid #dddddd;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  color: #009578;
+  border-bottom: 2px solid #009578;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+  
+}
+
+.tabs__content input{
+    display: block;
+    
+    margin-left: 70px;
+    width: 80%;
+    padding: 10px;
+           
+}
+
+input{
+  margin-right:50x;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid #000;
+}
+
+.tabs__content button.submit{
+    margin-left:100px;
+}
+
+div.wrapper{
+  height:100%;
+ display:flex;
+ flex-direction: row;
+ align-items: center;
+ width: 80%;
+}
+
+div.wrapper .right{
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+
+}
+
+@media screen and (min-width: 960px) {
+  div .wrapper{
+ flex-direction: column;
+  }
+  
+
+
+}
+
+#signIn{
+  margin-bottom: 15px;
+  margin-left:0px;
+  margin-top:10px;
+}
+
+#container{
+  align-items: center;
+}
+
+form.regist{
+  box-shadow: 0px 5px 33px -21px rgb(66 68 90);
+  width: 70%;
+  padding:50px;
+}
+
+section.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
